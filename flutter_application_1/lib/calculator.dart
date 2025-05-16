@@ -1,5 +1,21 @@
 import 'package:flutter/material.dart';
 
+class CalculatorApp extends StatelessWidget {
+  const CalculatorApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Bas Calculator',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: CalculatorPage(),
+    );
+  }
+}
+
 class CalculatorPage extends StatefulWidget {
   const CalculatorPage({super.key});
 
@@ -12,13 +28,14 @@ class _CalculatorPageState extends State<CalculatorPage> {
   Widget build(BuildContext context) {
     // TODO: implement build
 
-    return (Scaffold(
+    return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0x00000000),
         title: Text("Bas Calculator"),
       ),
       body: Container(
-        color: Color(0x00000000),
+        decoration: BoxDecoration(color: Color(0x00000000)),
+        padding: EdgeInsets.all(24),
         child: Column(
           children: [
             Flexible(
@@ -33,9 +50,58 @@ class _CalculatorPageState extends State<CalculatorPage> {
                 ),
               ),
             ),
+            Flexible(
+              flex: 9,
+              child: Container(
+                decoration: BoxDecoration(color: Color(0x00000000)),
+                child: Column(
+                  spacing: 12,
+                  children: [
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Flexible(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("AC"),
+                          ),
+                        ),
+                        Flexible(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("+/-"),
+                          ),
+                        ),
+                        Flexible(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("%"),
+                          ),
+                        ),
+                        Flexible(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("/"),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(children: [], spacing: 12),
+                    Row(children: [], spacing: 12),
+                    Row(children: [], spacing: 12),
+                    Row(children: [], spacing: 12),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
-    ));
+    );
   }
 }
