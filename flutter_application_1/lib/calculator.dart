@@ -50,39 +50,42 @@ class _CalculatorPageState extends State<CalculatorPage> {
                 ),
               ),
             ),
+            SizedBox(height: 24),
             Flexible(
               flex: 9,
               child: Container(
                 decoration: BoxDecoration(color: Color(0x00000000)),
                 child: Column(
-                  spacing: 12,
                   children: [
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Flexible(
+                        Expanded(
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
                             child: Text("AC"),
                           ),
                         ),
-                        Flexible(
+                        SizedBox(width: 12),
+                        Expanded(
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
                             child: Text("+/-"),
                           ),
                         ),
-                        Flexible(
+                        SizedBox(width: 12),
+                        Expanded(
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
                             child: Text("%"),
                           ),
                         ),
-                        Flexible(
+                        SizedBox(width: 12),
+                        Expanded(
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
