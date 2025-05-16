@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'calculator.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const CalculatorPage());
 }
 
 class MyApp extends StatelessWidget {
