@@ -30,15 +30,17 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0x00000000),
-        title: Text("Bas Calculator"),
+        backgroundColor: Colors.black,
+        title: Container(
+          child: Text("Bas Calculator", style: TextStyle(color: Colors.white)),
+        ),
       ),
       body: Container(
-        decoration: BoxDecoration(color: Color(0x00000000)),
+        decoration: BoxDecoration(color: Colors.black),
         padding: EdgeInsets.all(24),
         child: Column(
           children: [
-            Flexible(
+            Expanded(
               flex: 1,
               child: TextField(
                 decoration: InputDecoration(
@@ -51,7 +53,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
               ),
             ),
             SizedBox(height: 24),
-            Flexible(
+            Expanded(
               flex: 9,
               child: Container(
                 decoration: BoxDecoration(color: Color(0x00000000)),
@@ -94,10 +96,154 @@ class _CalculatorPageState extends State<CalculatorPage> {
                         ),
                       ],
                     ),
-                    Row(children: [], spacing: 12),
-                    Row(children: [], spacing: 12),
-                    Row(children: [], spacing: 12),
-                    Row(children: [], spacing: 12),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("AC"),
+                          ),
+                        ),
+                        SizedBox(width: 12),
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("+/-"),
+                          ),
+                        ),
+                        SizedBox(width: 12),
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("%"),
+                          ),
+                        ),
+                        SizedBox(width: 12),
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("/"),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("AC"),
+                          ),
+                        ),
+                        SizedBox(width: 12),
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("+/-"),
+                          ),
+                        ),
+                        SizedBox(width: 12),
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("%"),
+                          ),
+                        ),
+                        SizedBox(width: 12),
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("/"),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("AC"),
+                          ),
+                        ),
+                        SizedBox(width: 12),
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("+/-"),
+                          ),
+                        ),
+                        SizedBox(width: 12),
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("%"),
+                          ),
+                        ),
+                        SizedBox(width: 12),
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("/"),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("AC"),
+                          ),
+                        ),
+                        SizedBox(width: 12),
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("+/-"),
+                          ),
+                        ),
+                        SizedBox(width: 12),
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("%"),
+                          ),
+                        ),
+                        SizedBox(width: 12),
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("/"),
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
