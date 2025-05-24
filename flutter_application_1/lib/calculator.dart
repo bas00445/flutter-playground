@@ -66,6 +66,14 @@ class _CalculatorPageState extends State<CalculatorPage> {
                         Expanded(
                           flex: 1,
                           child: ElevatedButton(
+                            style: ButtonStyle(
+                              backgroundColor: WidgetStateProperty.all(
+                                Colors.indigo,
+                              ),
+                              foregroundColor: WidgetStateProperty.all(
+                                Colors.white,
+                              ),
+                            ),
                             onPressed: () {},
                             child: Text("AC"),
                           ),
