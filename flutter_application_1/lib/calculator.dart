@@ -55,11 +55,11 @@ class _CalculatorPageState extends State<CalculatorPage> {
             SizedBox(height: 24),
             Expanded(
               flex: 9,
-              child: Container(
-                decoration: BoxDecoration(color: Color(0x00000000)),
-                child: Column(
-                  children: [
-                    Row(
+              child: Column(
+                children: [
+                  Expanded(
+                    flex: 1,
+                    child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -75,7 +75,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("+/-"),
+                            child: Text("Del"),
                           ),
                         ),
                         SizedBox(width: 12),
@@ -83,7 +83,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("%"),
+                            child: Text("+/-"),
                           ),
                         ),
                         SizedBox(width: 12),
@@ -96,7 +96,10 @@ class _CalculatorPageState extends State<CalculatorPage> {
                         ),
                       ],
                     ),
-                    Row(
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -104,7 +107,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("AC"),
+                            child: Text("7"),
                           ),
                         ),
                         SizedBox(width: 12),
@@ -112,7 +115,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("+/-"),
+                            child: Text("8"),
                           ),
                         ),
                         SizedBox(width: 12),
@@ -120,7 +123,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("%"),
+                            child: Text("9"),
                           ),
                         ),
                         SizedBox(width: 12),
@@ -128,12 +131,15 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("/"),
+                            child: Text("X"),
                           ),
                         ),
                       ],
                     ),
-                    Row(
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -141,7 +147,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("AC"),
+                            child: Text("4"),
                           ),
                         ),
                         SizedBox(width: 12),
@@ -149,7 +155,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("+/-"),
+                            child: Text("5"),
                           ),
                         ),
                         SizedBox(width: 12),
@@ -157,7 +163,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("%"),
+                            child: Text("6"),
                           ),
                         ),
                         SizedBox(width: 12),
@@ -165,12 +171,15 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("/"),
+                            child: Text("-"),
                           ),
                         ),
                       ],
                     ),
-                    Row(
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -178,7 +187,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("AC"),
+                            child: Text("1"),
                           ),
                         ),
                         SizedBox(width: 12),
@@ -186,7 +195,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("+/-"),
+                            child: Text("2"),
                           ),
                         ),
                         SizedBox(width: 12),
@@ -194,7 +203,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("%"),
+                            child: Text("3"),
                           ),
                         ),
                         SizedBox(width: 12),
@@ -202,12 +211,15 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("/"),
+                            child: Text("+"),
                           ),
                         ),
                       ],
                     ),
-                    Row(
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -215,22 +227,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("AC"),
-                          ),
-                        ),
-                        SizedBox(width: 12),
-                        Expanded(
-                          flex: 1,
-                          child: ElevatedButton(
-                            onPressed: () {},
-                            child: Text("+/-"),
-                          ),
-                        ),
-                        SizedBox(width: 12),
-                        Expanded(
-                          flex: 1,
-                          child: ElevatedButton(
-                            onPressed: () {},
                             child: Text("%"),
                           ),
                         ),
@@ -239,13 +235,29 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("/"),
+                            child: Text("0"),
+                          ),
+                        ),
+                        SizedBox(width: 12),
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("."),
+                          ),
+                        ),
+                        SizedBox(width: 12),
+                        Expanded(
+                          flex: 1,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text("="),
                           ),
                         ),
                       ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ],
