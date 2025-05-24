@@ -28,6 +28,16 @@ class _CalculatorPageState extends State<CalculatorPage> {
   Widget build(BuildContext context) {
     // TODO: implement build
 
+    final primaryButtonStyle = ButtonStyle(
+      backgroundColor: WidgetStateProperty.all(Colors.indigo),
+      foregroundColor: WidgetStateProperty.all(Colors.white),
+    );
+
+    final euqalButtonStyle = ButtonStyle(
+      backgroundColor: WidgetStateProperty.all(Colors.blueAccent),
+      foregroundColor: WidgetStateProperty.all(Colors.white),
+    );
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
@@ -66,14 +76,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                         Expanded(
                           flex: 1,
                           child: ElevatedButton(
-                            style: ButtonStyle(
-                              backgroundColor: WidgetStateProperty.all(
-                                Colors.indigo,
-                              ),
-                              foregroundColor: WidgetStateProperty.all(
-                                Colors.white,
-                              ),
-                            ),
+                            style: primaryButtonStyle,
                             onPressed: () {},
                             child: Text("AC"),
                           ),
@@ -82,6 +85,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                         Expanded(
                           flex: 1,
                           child: ElevatedButton(
+                            style: primaryButtonStyle,
                             onPressed: () {},
                             child: Text("Del"),
                           ),
@@ -90,6 +94,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                         Expanded(
                           flex: 1,
                           child: ElevatedButton(
+                            style: primaryButtonStyle,
                             onPressed: () {},
                             child: Text("+/-"),
                           ),
@@ -98,6 +103,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                         Expanded(
                           flex: 1,
                           child: ElevatedButton(
+                            style: primaryButtonStyle,
                             onPressed: () {},
                             child: Text("/"),
                           ),
@@ -138,6 +144,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                         Expanded(
                           flex: 1,
                           child: ElevatedButton(
+                            style: primaryButtonStyle,
                             onPressed: () {},
                             child: Text("X"),
                           ),
@@ -178,6 +185,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                         Expanded(
                           flex: 1,
                           child: ElevatedButton(
+                            style: primaryButtonStyle,
                             onPressed: () {},
                             child: Text("-"),
                           ),
@@ -218,6 +226,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                         Expanded(
                           flex: 1,
                           child: ElevatedButton(
+                            style: primaryButtonStyle,
                             onPressed: () {},
                             child: Text("+"),
                           ),
@@ -259,7 +268,14 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           flex: 1,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text("="),
+                            style: euqalButtonStyle,
+                            child: Text(
+                              "=",
+                              style: TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ),
                       ],
